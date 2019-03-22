@@ -1,0 +1,35 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+ext {
+    PUBLISH_GROUP_ID = 'com.johan'
+    PUBLISH_ARTIFACT_ID = 'view-finder-annotation'
+    PUBLISH_VERSION = '1.1'
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: "file://F:/Maven/ViewFinderAnnotation")
+        pom.project {
+            groupId project.PUBLISH_GROUP_ID
+            artifactId project.PUBLISH_ARTIFACT_ID
+            version project.PUBLISH_VERSION
+        }
+    }
+}
+
+task javaSourcesJar(type: Jar) {
+    classifier = 'sources'
+    from 'src/main/java'
+}
+
+artifacts {
+    archives javaSourcesJar
+}
