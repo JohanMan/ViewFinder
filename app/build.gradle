@@ -26,7 +26,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:26.1.0'
     testCompile 'junit:junit:4.12'
-    compile 'com.johan:view-finder:1.1'
-    compile 'com.johan:view-finder-annotation:1.1'
-    annotationProcessor 'com.johan:view-finder-processor:1.1'
+    compile 'com.johan:view-finder:1.12'
+    compile 'com.johan:view-finder-annotation:1.12'
+    annotationProcessor 'com.johan:view-finder-processor:1.12'
 }
