@@ -1,5 +1,19 @@
 ## 使用说明
 
+### 注意事项
+
+如果遇到导入不成功，可能是因为 github 域名问题，需要在
+
+**C:\Windows\System32\drivers\etc\host** 
+
+文件末尾添加
+
+```text
+199.232.68.133 raw.githubusercontent.com
+```
+
+保存即可
+
 ### 项目 build.gradle 文件
 
 ```groovy
