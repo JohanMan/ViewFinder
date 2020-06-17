@@ -3,9 +3,11 @@ package com.johan.view.finder;
 import java.io.File;
 import java.util.List;
 
+import javax.annotation.processing.Messager;
 import javax.annotation.processing.ProcessingEnvironment;
 import javax.lang.model.element.Element;
 import javax.lang.model.util.Elements;
+import javax.tools.Diagnostic;
 
 /**
  * Created by Johan on 2018/9/9.
@@ -49,7 +51,10 @@ public class ElementUtil {
         layout = layout + ".xml";
         // 查找布局文件
         File layoutFile = FileUtil.findLayout(layout);
-        if (layoutFile == null) return null;
+        if (layoutFile == null) {
+            log(processingEnvironment, "没找到" + layout + "布局文件");
+            return null;
+        }
         // 解析布局文件 xml
         List<ElementResult.ViewField> fieldList = LayoutHelper.parseLayout(layoutFile);
         result.fieldList = fieldList;
@@ -73,6 +78,16 @@ public class ElementUtil {
      */
     private static String getPackageName(Elements elementUtils, Element element) {
         return elementUtils.getPackageOf(element.getEnclosingElement()).asType().toString();
+    }
+
+    /**
+     * 打印 Log
+     * @param processingEnvironment
+     * @param info
+     */
+    private static void log(ProcessingEnvironment processingEnvironment, String info) {
+        Messager messager = processingEnvironment.getMessager();
+        messager.printMessage(Diagnostic.Kind.NOTE, "** Log ** \n" + info);
     }
 
 }
