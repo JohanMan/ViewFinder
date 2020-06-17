@@ -11,7 +11,7 @@ targetCompatibility = "1.7"
 ext {
     PUBLISH_GROUP_ID = 'com.johan'
     PUBLISH_ARTIFACT_ID = 'view-finder-annotation'
-    PUBLISH_VERSION = '1.1'
+    PUBLISH_VERSION = '1.12'
 }
 
 uploadArchives {
