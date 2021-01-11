@@ -13,12 +13,12 @@ targetCompatibility = "1.7"
 ext {
     PUBLISH_GROUP_ID = 'com.johan'
     PUBLISH_ARTIFACT_ID = 'view-finder-processor'
-    PUBLISH_VERSION = '1.12'
+    PUBLISH_VERSION = '1.13'
 }
 
 uploadArchives {
     repositories.mavenDeployer {
-        repository(url: "file://F:/Maven/ViewFinderProcessor")
+        repository(url: "file://E:/Maven/ViewFinderProcessor")
         pom.project {
             groupId project.PUBLISH_GROUP_ID
             artifactId project.PUBLISH_ARTIFACT_ID

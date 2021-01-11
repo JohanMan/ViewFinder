@@ -28,5 +28,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.johan:view-finder:1.12'
     compile 'com.johan:view-finder-annotation:1.12'
-    annotationProcessor 'com.johan:view-finder-processor:1.12'
+    annotationProcessor 'com.johan:view-finder-processor:1.13'
 }

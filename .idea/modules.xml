@@ -3,7 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ViewFinder.iml" filepath="$PROJECT_DIR$/ViewFinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/ViewFinder-app.iml" filepath="$PROJECT_DIR$/app/ViewFinder-app.iml" group="ViewFinder/app" />
+      <module fileurl="file://$PROJECT_DIR$/view-finder/ViewFinder-view-finder.iml" filepath="$PROJECT_DIR$/view-finder/ViewFinder-view-finder.iml" group="ViewFinder/view-finder" />
+      <module fileurl="file://$PROJECT_DIR$/view-finder-annotation/ViewFinder-view-finder-annotation.iml" filepath="$PROJECT_DIR$/view-finder-annotation/ViewFinder-view-finder-annotation.iml" group="ViewFinder/view-finder-annotation" />
+      <module fileurl="file://$PROJECT_DIR$/view-finder-processor/ViewFinder-view-finder-processor.iml" filepath="$PROJECT_DIR$/view-finder-processor/ViewFinder-view-finder-processor.iml" group="ViewFinder/view-finder-processor" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-ViewFinder.iml" filepath="$PROJECT_DIR$/project-ViewFinder.iml" group="ViewFinder" />
       <module fileurl="file://$PROJECT_DIR$/view-finder/view-finder.iml" filepath="$PROJECT_DIR$/view-finder/view-finder.iml" />
       <module fileurl="file://$PROJECT_DIR$/view-finder-annotation/view-finder-annotation.iml" filepath="$PROJECT_DIR$/view-finder-annotation/view-finder-annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/view-finder-processor/view-finder-processor.iml" filepath="$PROJECT_DIR$/view-finder-processor/view-finder-processor.iml" />

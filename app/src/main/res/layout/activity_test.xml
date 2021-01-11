@@ -13,4 +13,12 @@
         android:text="this is info"
         />
 
+    <ViewStub
+        android:id="@+id/view_stub"
+        android:inflatedId="@id/view_stub"
+        android:layout="@layout/layout_waiting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
 </LinearLayout>

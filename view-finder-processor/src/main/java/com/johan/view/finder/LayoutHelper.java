@@ -108,7 +108,7 @@ public class LayoutHelper {
         public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
             super.startElement(uri, localName, qName, attributes);
             // include ViewStub
-            if ("include".equals(qName) || "ViewStub".equals(qName)) {
+            if ("include".equals(qName)) {
                 // 获取 layout 属性值
                 String layoutValue = findAttribute(attributes, "layout");
                 if (layoutValue == null) return;
